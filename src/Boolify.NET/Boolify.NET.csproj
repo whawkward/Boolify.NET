@@ -5,6 +5,14 @@
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
 		<LangVersion>13</LangVersion>
+		<PackageId>boolify-dotnet</PackageId>
+		<Title>Boolify.NET</Title>
+		<Description>A boolean expression parser and evaluator.</Description>
+		<PackageTags>c#;.net;.netstandard2.0;.net8;.net9;library;boolean expressions;parser</PackageTags>
+		<PackageProjectUrl>https://github.com/whawkward/Boolify.NET</PackageProjectUrl>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<RepositoryUrl>https://github.com/whawkward/Boolify.NET</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(TargetFramework)' == 'netstandard2.0'">
@@ -22,6 +30,13 @@
 
 	<ItemGroup>
 	  <Folder Include="Exceptions\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Include="..\..\README.md">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
 	</ItemGroup>
 
 </Project>
