@@ -19,11 +19,13 @@
 		<NoWarn>$(NoWarn);nullable</NoWarn>
 	</PropertyGroup>
 
-	<ItemGroup>
+	<ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.0'">
 		<PackageReference Include="Nullable" Version="1.3.1">
-		  <PrivateAssets>all</PrivateAssets>
-		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 		</PackageReference>
+	</ItemGroup>
+	<ItemGroup>		
 		<PackageReference Include="System.Collections.Immutable" Version="9.0.2" />
 		<PackageReference Include="System.Memory" Version="4.6.0" />
 	</ItemGroup>
